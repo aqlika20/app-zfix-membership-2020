@@ -36,10 +36,10 @@ const routes: Routes = [
       (m) => m.TermsPageModule)
   },
   {
-    path: 'privacy-policy',
+    path: 'privacy-register',
     loadChildren: () => 
-    import('./pages/landing/setting/privacy-policy/privacy-policy.module').then( 
-      (m) => m.PrivacyPolicyPageModule)
+    import('./pages/landing/setting/privacy-register/privacy-register.module').then( 
+      (m) => m.PrivacyRegisterPageModule)
   },
 
 ];

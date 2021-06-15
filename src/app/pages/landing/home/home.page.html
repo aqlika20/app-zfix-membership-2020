@@ -1,6 +1,6 @@
 <ion-content mode="md" [fullscreen]="true">
   <ion-item lines="none" class="current-user">
-    <ion-avatar slot="start">
+    <ion-avatar>
       <img src="./assets/images/contact_mascot.png" />
     </ion-avatar>
     <ion-label class="ion-text-nowrap">
@@ -8,15 +8,15 @@
     </ion-label>
   </ion-item>
 
-  <ion-slides pager="true">
-    <ion-slide>
-      <img src="./assets/images/login_header.png" />
-    </ion-slide>
-  </ion-slides>
+  <!-- <ion-slides pager="true">
+    <ion-slide> -->
+      <img src="./assets/images/2.0x/header.png" class="img-header"/>
+    <!-- </ion-slide>
+  </ion-slides> -->
 
   <ion-card>
     <ion-item (click)="goTo(1)">
-      <ion-img src="./assets/images/cta_activation.png"></ion-img>
+      <ion-img src="./assets/images/cta_activation.png" class="img-btn"></ion-img>
       <ion-label class="ion-text-nowrap">
         <ion-card-title> AKTIVASIKAN MEMBERSHIP ANDA </ion-card-title>
         <ion-card-content>
@@ -28,7 +28,7 @@
 
   <ion-card>
     <ion-item (click)="goTo(2)">
-      <ion-img src="./assets/images/cta_activation.png"></ion-img>
+      <ion-img src="./assets/images/cta_activation.png" class="img-btn"></ion-img>
       <ion-label class="ion-text-nowrap">
         <ion-card-title> PENGAJUAN PERBAIKAN </ion-card-title>
         <ion-card-content>

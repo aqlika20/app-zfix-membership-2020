@@ -18,7 +18,7 @@ export class IndexPage implements OnInit {
     private authService: AuthenticationService,
     private storage: Storage,
     private userApiService: UserApiService,
-    private utilsService: UtilitiesService
+    public utilsService: UtilitiesService
   ) {}
 
   ngOnInit() {

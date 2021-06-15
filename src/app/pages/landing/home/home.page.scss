@@ -4,14 +4,14 @@ ion-slide {
   align-content: center;
 }
 
+ion-label p{
+  margin-left: 10px;
+  font-weight: bold;
+}
+
 ion-text {
   padding-top: 5%;
   margin-bottom: 10%;
-}
-
-img{
-  height: 90%; 
-  width: 90%;
 }
 
 ion-img {
@@ -26,14 +26,22 @@ ion-card {
 
 ion-card-title {
   white-space: normal;
-  padding-top: 5%;
-  margin-left: 10%;
+  padding-top: 15px;
+  margin-left: 20px;
   color: #000080;
   font-weight: bold;
 }
 
 ion-card-content {
   white-space: normal;
-  margin-left: 4%;
+  margin-left: 5px;
   color: #808080;
+}
+
+.img-header {
+  width:100%;
+}
+
+.img-btn {
+  max-width: 80px;
 }

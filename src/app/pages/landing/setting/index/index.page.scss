@@ -4,13 +4,16 @@ ion-img {
     padding-bottom: 3%;
   }
   
-  p{
+  ion-label p{
       margin-left: 10px;
       font-weight: bold;
-      color: black;
   }
-  
-  img{
-    height: auto;
-    width: auto;
+
+
+  .img-btn {
+    max-width: 80px;
   }
+
+  ion-item {
+    padding-right: 20px !important;
+}

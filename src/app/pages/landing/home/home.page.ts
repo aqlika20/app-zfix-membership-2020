@@ -27,7 +27,7 @@ export class HomePage {
   constructor(
     private storage: Storage,
     private userApiService: UserApiService,
-    private utilsService: UtilitiesService,
+    public utilsService: UtilitiesService,
     private membership: MembershipService,
     public toastCtrl: ToastController,
     private router: Router,

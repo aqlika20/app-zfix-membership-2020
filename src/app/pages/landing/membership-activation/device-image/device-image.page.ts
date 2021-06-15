@@ -37,7 +37,7 @@ export class DeviceImagePage implements OnInit {
     private storage: Storage,
     private camera: Camera, 
     private membershipApiService: MembershipApiService,
-    private utilsService: UtilitiesService,
+    public utilsService: UtilitiesService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private preview: CameraPreview,
@@ -210,6 +210,7 @@ export class DeviceImagePage implements OnInit {
       });
       await alert.present();
     }
+    
 }
 
   // copyText(){

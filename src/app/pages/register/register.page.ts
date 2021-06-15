@@ -12,7 +12,7 @@ export class RegisterPage implements OnInit {
 
   credential: any = {}
 
-  constructor(private authApiService: AuthenticationApiService, private authService: AuthenticationService, private utilsService: UtilitiesService) { }
+  constructor(private authApiService: AuthenticationApiService, private authService: AuthenticationService, public utilsService: UtilitiesService) { }
 
   ngOnInit() {
   }
@@ -48,5 +48,9 @@ export class RegisterPage implements OnInit {
        
       });
     }
+  }
+
+  hideKeyboard() {
+    this.utilsService.hideKeyboard()
   }
 }

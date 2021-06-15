@@ -7,7 +7,7 @@
 <ion-content [fullscreen]="true" mode="md">
 
   <ion-item  lines="none" routerLink="../../edit-profile" class="current-user">
-    <ion-avatar slot="start">
+    <ion-avatar>
       <img src="./assets/images/contact_mascot.png">
     </ion-avatar>
     <ion-label class="ion-text-nowrap">
@@ -18,7 +18,7 @@
 
   <ion-card class="welcome-card">
     <ion-item routerLink="../../my-card">
-      <ion-img src="./assets/images/setting_menu_cards.png"></ion-img>
+      <ion-img src="./assets/images/setting_menu_cards.png" class="img-btn"></ion-img>
       <ion-label class="ion-text-nowrap">
         <p>Kartu Saya</p>
       </ion-label>
@@ -32,14 +32,14 @@
     </ion-item> -->
 
     <ion-item routerLink="../../outlet">
-      <ion-img src="./assets/images/setting_menu_outlets.png"></ion-img>
+      <ion-img src="./assets/images/setting_menu_outlets.png" class="img-btn"></ion-img>
       <ion-label class="ion-text-nowrap">
         <p>Service Center ZFix</p>
       </ion-label>
     </ion-item> 
     
     <ion-item routerLink="../../call-us">
-      <ion-img src="./assets/images/setting_menu_contact.png"></ion-img>
+      <ion-img src="./assets/images/setting_menu_contact.png" class="img-btn"></ion-img>
       <ion-label class="ion-text-nowrap">
         <p>Hubungi Kami</p>
       </ion-label>
@@ -47,15 +47,15 @@
   </ion-card>
 
 <ion-card>
-    <ion-item routerLink="../../privacy-register">
-      <ion-img src="./assets/images/setting_menu_privacy.png"></ion-img>
+    <ion-item routerLink="../../privacy-policy">
+      <ion-img src="./assets/images/setting_menu_privacy.png" class="img-btn"></ion-img>
       <ion-label class="ion-text-nowrap">
         <p>Kebijakan Privasi</p>
       </ion-label>
     </ion-item>
 
     <ion-item routerLink="../../terms">
-      <ion-img src="./assets/images/setting_menu_terms.png"></ion-img> 
+      <ion-img src="./assets/images/setting_menu_terms.png" class="img-btn"></ion-img> 
       <ion-label class="ion-text-nowrap">
         <p>Syarat & Ketentuan</p>
       </ion-label>
@@ -64,7 +64,7 @@
 
 <ion-card>
   <ion-item (click)="logout()">
-    <ion-img src="./assets/images/setting_menu_logout.png"></ion-img>
+    <ion-img src="./assets/images/setting_menu_logout.png" class="img-btn"></ion-img>
     <ion-label class="ion-text-nowrap">
       <p>Logout</p>
     </ion-label>

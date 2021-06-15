@@ -16,7 +16,7 @@ export class MyCardPage implements OnInit {
   constructor(
     private storage: Storage,
     private MembershipService: MembershipApiService,
-    private utilsService: UtilitiesService
+    public utilsService: UtilitiesService
   ) { }
 
   ngOnInit() {

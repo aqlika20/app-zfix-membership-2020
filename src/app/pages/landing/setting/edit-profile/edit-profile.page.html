@@ -12,37 +12,37 @@
     <img src="./assets/images/on_board_repair.png">
   </ion-avatar>
 
-  <ion-card>
+  <ion-card class="edit-profle">
     <ion-item>
       <ion-label position="floating">Nama</ion-label>
-      <ion-input type="text" name="name" [(ngModel)]="user.data?.user.name" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+      <ion-input type="text" name="name" [(ngModel)]="user.data?.user.name" (keyup.enter)="hideKeyboard()" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">No. Telepon</ion-label>
-      <ion-input name="contact"  [(ngModel)]="user.data?.customer.contact" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+      <ion-input name="contact"  [(ngModel)]="user.data?.customer.contact" (keyup.enter)="hideKeyboard()" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Alamat</ion-label>
-      <ion-input name="address"  [(ngModel)]="user.data?.customer.address" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+      <ion-input name="address"  [(ngModel)]="user.data?.customer.address" (keyup.enter)="hideKeyboard()" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">No. KTP(NIK)</ion-label>
-      <ion-input name="identity"  [(ngModel)]="user.data?.customer.identity" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+      <ion-input name="identity"  [(ngModel)]="user.data?.customer.identity" (keyup.enter)="hideKeyboard()" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Tanggal Lahir</ion-label>
-      <ion-input name="birth_date" type="date" [(ngModel)]="user.data?.customer.birth_date" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+      <ion-input name="birth_date" type="date" [(ngModel)]="user.data?.customer.birth_date" (keyup.enter)="hideKeyboard()" ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Gender</ion-label>
-      <ion-select name="gender" [(ngModel)]="user.data?.customer.gender" (keyup.enter)="utilsService.hideKeyboard()">
+      <ion-select name="gender" [(ngModel)]="user.data?.customer.gender" (keyup.enter)="hideKeyboard()">
         <ion-select-option value="Male">Male</ion-select-option>
         <ion-select-option value="Female">Female</ion-select-option>
       </ion-select>
     </ion-item>
     <ion-item line="none">
       <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" name="email"  [(ngModel)]="user.data?.user.email" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+      <ion-input type="text" name="email"  [(ngModel)]="user.data?.user.email" (keyup.enter)="hideKeyboard()" ></ion-input>
     </ion-item>
   </ion-card>
 

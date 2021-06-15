@@ -26,7 +26,7 @@ export class OverviewPage implements OnInit {
     private androidPermissions: AndroidPermissions, 
     private platform: Platform, 
     private membershipApiService: MembershipApiService,
-    private utilsService: UtilitiesService, 
+    public utilsService: UtilitiesService, 
     private membership: MembershipService,
     public navCtrl: NavController,
     private router: Router,

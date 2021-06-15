@@ -23,18 +23,18 @@
 
         <ion-item>
           <ion-label position="floating">Kode Aktivasi ZFix</ion-label>
-          <ion-input [(ngModel)]="code" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+          <ion-input [(ngModel)]="code" (keyup.enter)="hideKeyboard()" ></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label position="floating">IMEI</ion-label>
-          <ion-input type="number" [(ngModel)]="imei" [readonly]="!imeiEditable" (keyup.enter)="utilsService.hideKeyboard()" ></ion-input>
+          <ion-input type="number" [(ngModel)]="imei" [readonly]="!imeiEditable" (keyup.enter)="hideKeyboard()" ></ion-input>
         </ion-item>
         
           <label for="lokasi_beli_voucher" style="color: black;">Lokasi Beli Membership</label><br>
           <input id="lokasi_beli_voucher"  class="w3-input" type="text" [(ngModel)]="lokasi_beli_voucher" [ngbTypeahead]="search" [inputFormatter]="formatter" [resultFormatter]="formatter" [editable]='false' />
 
-          <!-- <ion-input type="text" (ionInput)="searchStores($event)" [(ngModel)]="searchStore" (keyup.enter)="utilsService.hideKeyboard()"></ion-input> -->
+          <!-- <ion-input type="text" (ionInput)="searchStores($event)" [(ngModel)]="searchStore" (keyup.enter)="hideKeyboard()"></ion-input> -->
 
       <!-- <ion-list *ngIf="stores.data?.store.length > 0;">
         <ion-radio-group [(ngModel)]="lokasi_beli_voucher">

@@ -1,9 +1,6 @@
 <ion-content>
-  <img src="./assets/images/2.0x/login_header.png">
+  <img src="./assets/images/2.0x/header.png" class="img-header">
 
-  <div class="ion-text-center ion-text-uppercase ion-margin">
-    <h1>Login</h1>
-  </div>
 
   <div class="middle">
     <ion-card>
@@ -11,21 +8,25 @@
         <form>
           <ion-list lines="full" >
            
+            <div class="ion-text-center ion-text-uppercase ion-margin">
+              <h1>Login</h1>
+            </div>
+
             <ion-item>
               <ion-label position="floating">Email</ion-label>
-              <ion-input name="email" type="email" [(ngModel)]="credential.email" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z]{2,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" (keyup.enter)="utilsService.hideKeyboard()" required></ion-input>
+              <ion-input name="email" type="email" [(ngModel)]="credential.email" pattern="[A-Za-z0-9._%+-]{2,}@[a-zA-Z]{2,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" (keyup.enter)="hideKeyboard()" required></ion-input>
             </ion-item>
   
             <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input name="password" type="password" [(ngModel)]="credential.password" minlength="8" (keyup.enter)="utilsService.hideKeyboard()" required></ion-input>
+              <ion-input name="password" type="password" [(ngModel)]="credential.password" minlength="8" (keyup.enter)="hideKeyboard()" required></ion-input>
             </ion-item>
   
           </ion-list>
   
           <div class="ion-padding">
             <ion-button expand="block" (click)="login()" class="ion-margin">Login</ion-button>
-            <ion-button expand="block" routerLink="/privacy-policy" class="ion-margin">Register</ion-button>
+            <ion-button expand="block" routerLink="/privacy-register" class="ion-margin">Register</ion-button>
           </div>
         </form>
         <div class="ion-text-center ion-margin">

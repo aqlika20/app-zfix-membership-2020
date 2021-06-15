@@ -93,11 +93,11 @@ const routes: Routes = [
     import('./setting/edit-profile/edit-profile.module').then( 
       (m) => m.EditProfilePageModule)
   },
-  {
-    path: 'privacy-register',
-    loadChildren: () => import('./setting/privacy-register/privacy-register.module').then( 
-      (m) => m.PrivacyRegisterPageModule)
-  },
+  // {
+  //   path: 'privacy-register',
+  //   loadChildren: () => import('./setting/privacy-register/privacy-register.module').then( 
+  //     (m) => m.PrivacyRegisterPageModule)
+  // },
 
 ];
 @NgModule({

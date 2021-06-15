@@ -22,7 +22,7 @@ export class EditProfilePage implements OnInit {
     private userApiService: UserApiService,
     private router: Router,
     private alertCtrl: AlertController,
-    private utilsService: UtilitiesService
+    public utilsService: UtilitiesService
   ) {}
 
   ngOnInit() {
@@ -75,5 +75,9 @@ export class EditProfilePage implements OnInit {
         );
       });
     }    
+  }
+
+  hideKeyboard() {
+    this.utilsService.hideKeyboard()
   }
 }
